@@ -1,5 +1,15 @@
 <?php
-
+// A class to login to Google Groups, save a session cookie
+// and update Latitude with a given location.
+//
+// Original code by:
+//
+// Nat Friedman <nat@nat.org>
+// Jack Catchpoole <jack@catchpoole.com>
+// Andy Blyler <ajb@blyler.cc>
+//
+// MIT license.
+//             
 
 class googleLogin
 {

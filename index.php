@@ -1,4 +1,6 @@
 <?php
+// MIT license.
+
 // TODO: make it possible to login as a different user. via http-auth e.g.
 include "googleLogin.php";
 include "config.php";
