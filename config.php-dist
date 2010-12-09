@@ -1,0 +1,5 @@
+<?php
+
+$user = "user";
+$pass = "pass";
+$domain = "example.org";
