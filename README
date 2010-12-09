@@ -1,0 +1,41 @@
+README
+******
+
+You can't access the RSS feed of private Google Groups for Goolge Apps 
+outside of your logged in browser session. There's just no way to provide 
+your credentials.
+
+This little script makes it possible to get an RSS feed of your latest
+threads in a private Google Group. It first tries to login into your 
+Google account like a browser would do and then saves all the cookies into
+a curl cookie file. With that you can later access the RSS feeds (because
+they are there, just hidden).
+
+For the login part I used a class which is provided by playnice by Andy Blyler 
+(https://github.com/ablyler/playnice) and adjusted it to login against your 
+Google Groups account and not Latitude. The rest was easy.
+
+INSTALL
+*******
+
+Put all files in a directory. Rename config.inc-dist to config.inc, add your
+credentials and call it with eg. http://localhost/gr2rss/index.php?group=mygroup.
+You can also use it from the CLI, but then you have to replace the $_GET['group']
+with something more appropriate.
+
+CAUTION
+*******
+
+Make sure you protect that file somehow (with http-auth for example) so that 
+not everyone can read your RSS feed and with that the content of your maybe 
+private conversation!
+
+
+TODO
+****
+
+(no real itentions to actually do it, but as an inspiration)
+
+* Provide credentials via http-auth
+* whitelist groups
+
