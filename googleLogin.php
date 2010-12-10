@@ -18,7 +18,7 @@ class googleLogin
     
         public function __construct()
         {
-                $this->cookieFile = dirname(__FILE__) . "/google-cookie.txt";
+                $this->cookieFile = sys_get_temp_dir() . "/google-cookie.txt";
         }
     
 
